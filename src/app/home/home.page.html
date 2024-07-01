@@ -1,20 +1,40 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar class="toolbar-background">
+    <ion-title class="stranger-things-title">
+      Herramientas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" class="ion-padding custom-background">
+  <div class="image-container">
+    <img src="assets/toolbox.jpg" alt="Caja de herramientas" class="toolbox-image">
   </div>
+
+  <ion-list>
+    <ion-item button routerLink="/gender" class="custom-item">
+      <ion-icon slot="start" name="man"></ion-icon>
+      <ion-label>Predicción de Género</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/age" class="custom-item">
+      <ion-icon slot="start" name="calendar"></ion-icon>
+      <ion-label>Predicción de Edad</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/universities" class="custom-item">
+      <ion-icon slot="start" name="school"></ion-icon>
+      <ion-label>Universidades por País</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/weather" class="custom-item">
+      <ion-icon slot="start" name="partly-sunny"></ion-icon>
+      <ion-label>Clima en RD</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/news" class="custom-item">
+      <ion-icon slot="start" name="newspaper"></ion-icon>
+      <ion-label>Últimas Noticias</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/about" class="custom-item">
+      <ion-icon slot="start" name="information-circle"></ion-icon>
+      <ion-label>Acerca de</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-background">
+    <ion-title class="weather-title">Clima en República Dominicana</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding weather-content">
+  <ion-loading [isOpen]="loading" message="Cargando..." spinner="circles"></ion-loading>
+  <div *ngIf="weather" class="weather-card">
+    <h2>{{ weather.name }}</h2>
+    <p>Temperatura: {{ weather.main.temp }} °C</p>
+    <p>Descripción: {{ weather.weather[0].description }}</p>
+    <img [src]="'https://openweathermap.org/img/w/' + weather.weather[0].icon + '.png'" alt="Clima">
+  </div>
+</ion-content>

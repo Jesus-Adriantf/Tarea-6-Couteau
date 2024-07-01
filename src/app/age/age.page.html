@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-background">
+    <ion-title class="title-styled">Predicción de Edad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding custom-background">
+  <div class="search-container">
+    <ion-item class="custom-item">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-button expand="block" class="custom-button" (click)="predictAge()">Predecir Edad</ion-button>
+  </div>
+  
+  <!-- Barra de carga -->
+  <ion-loading [isOpen]="loading" message="Cargando..." spinner="circles"></ion-loading>
+  
+  <div *ngIf="edad !== null" class="age-category">
+    <p><strong>La edad predicha es:</strong> {{ edad }}</p>
+    <div *ngIf="edad < 18">
+      <p><strong>Eres joven</strong></p>
+      <img src="assets/joven.jpg" alt="Joven" class="age-image">
+    </div>
+    <div *ngIf="edad >= 18 && edad < 60">
+      <p><strong>Eres adulto/a</strong></p>
+      <img src="assets/Adulto.jpg" alt="Adulto" class="age-image">
+    </div>
+    <div *ngIf="edad >= 60">
+      <p><strong>Eres anciano/a</strong></p>
+      <img src="assets/Anciano.jpeg" alt="Anciano" class="age-image">
+    </div>
+  </div>
+</ion-content>

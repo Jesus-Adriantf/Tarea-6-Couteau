@@ -1,0 +1,52 @@
+/* Título estilizado */
+.title-styled {
+  color: #ff0000 !important;
+  font-weight: bold !important;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Estilo personalizado para ion-item */
+.custom-item {
+  --background: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo personalizado para ion-button */
+.custom-button {
+  --background: #ff0000;
+  --color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Clases de categoría de edad */
+.age-category {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(36, 36, 36);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Imagen de categoría de edad */
+.age-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* ion-label */
+ion-label {
+  color: #fff;
+}

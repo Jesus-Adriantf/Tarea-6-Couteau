@@ -1,0 +1,62 @@
+
+/* Título estilizado */
+.title-styled {
+  color: #ff0000 !important;
+  font-weight: bold !important;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Estilo personalizado para ion-item */
+.custom-item {
+  --background: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo personalizado para ion-button */
+.custom-button {
+  --background: #ff0000;
+  --color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Lista de universidades */
+.university-list {
+  margin-top: 20px;
+}
+
+/* Estilo personalizado para cada universidad */
+.university-item {
+  --background: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.university-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Enlaces */
+a {
+  color: #0073ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ion-label */
+ion-label {
+  color: #fff;
+}
